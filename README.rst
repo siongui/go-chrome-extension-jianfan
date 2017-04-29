@@ -21,8 +21,8 @@ Gojianfan Chrome Extension
    :target: https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D
 
 
-Chrome extension for Traditional and Simplified Chinese, written in Go_,
-compiled to JavaScript via GopherJS_.
+Chrome extension for Traditional and Simplified Chinese cinversion, written in
+Go_, compiled to JavaScript via GopherJS_.
 
 Tested on:
 
@@ -61,6 +61,8 @@ References
        (`GitHub <https://github.com/gopherjs/gopherjs>`__,
        `GopherJS Playground <http://www.gopherjs.org/playground/>`_,
        |godoc|)
+
+.. [4] `GitHub - fabioberger/chrome: GopherJS Bindings for Chrome <https://github.com/fabioberger/chrome>`_
 
 .. _Go: https://golang.org/
 .. _JavaScript: https://www.google.com/search?q=JavaScript
