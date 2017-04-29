@@ -1,5 +1,5 @@
 ==========================
-
+Gojianfan Chrome Extension
 ==========================
 
 .. image:: https://img.shields.io/badge/Language-Go-blue.svg
@@ -56,6 +56,11 @@ References
        | `golang chrome extension - Yahoo search <https://search.yahoo.com/search?p=golang+chrome+extension>`_
        | `golang chrome extension - Baidu search <https://www.baidu.com/s?wd=golang+chrome+extension>`_
        | `golang chrome extension - Yandex search <https://www.yandex.com/search/?text=golang+chrome+extension>`_
+
+.. [3] `GopherJS - A compiler from Go to JavaScript <http://www.gopherjs.org/>`_
+       (`GitHub <https://github.com/gopherjs/gopherjs>`__,
+       `GopherJS Playground <http://www.gopherjs.org/playground/>`_,
+       |godoc|)
 
 .. _Go: https://golang.org/
 .. _JavaScript: https://www.google.com/search?q=JavaScript
