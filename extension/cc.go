@@ -6,11 +6,24 @@ import (
 	"strings"
 )
 
+var excludedElement = map[string]bool{
+	"style":    true,
+	"script":   true,
+	"noscript": true,
+	"iframe":   true,
+	"object":   true,
+}
+
 func traverse(elm *Object) {
 	nodeType := elm.NodeType()
 
 	if nodeType == 1 || nodeType == 9 {
 		// element node or document node
+
+		if _, in := excludedElement[strings.ToLower(elm.TagName())]; in {
+			return
+		}
+
 		for _, node := range elm.ChildNodes() {
 			// recursively call to traverse
 			traverse(node)
@@ -22,7 +35,7 @@ func traverse(elm *Object) {
 		// text node
 		v := strings.TrimSpace(elm.NodeValue())
 		if v != "" {
-			println(gojianfan.S2T(v))
+			elm.SetNodeValue(gojianfan.S2T(v))
 		}
 		return
 	}
