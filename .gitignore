@@ -1,4 +1,5 @@
 bin/
 pkg/
 src/
-extension/cc.js*
+extension/*.js
+extension/*.js.map

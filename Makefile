@@ -6,9 +6,14 @@ export GOPATH=$(realpath .)
 export PATH := $(GOROOT)/bin:$(GOPATH)/bin:$(PATH)
 
 
-build:
+build: fmt
 	@echo "\033[92mCompiling Go to JavaScript ...\033[0m"
+	gopherjs build extension/click.go -o extension/click.js
 	gopherjs build extension/cc.go -o extension/cc.js
+
+fmt:
+	@echo "\033[92mGo fmt source code...\033[0m"
+	@go fmt extension/*.go
 
 install:
 	@echo "\033[92mInstalling GopherJS ...\033[0m"
@@ -19,3 +24,7 @@ install:
 	go get -u github.com/siongui/godom
 	@echo "\033[92mInstalling github.com/siongui/gojianfan ...\033[0m"
 	go get -u github.com/siongui/gojianfan
+
+clean:
+	rm extension/*.js
+	rm extension/*.js.map

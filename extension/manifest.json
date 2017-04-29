@@ -11,7 +11,7 @@
     "default_icon": "icon.png"
   },
   "background": {
-    "scripts": ["cc.js"],
+    "scripts": ["click.js"],
     "persistent": false
   },
   "permissions": [
