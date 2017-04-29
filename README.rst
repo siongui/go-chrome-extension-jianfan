@@ -64,6 +64,11 @@ References
 
 .. [4] `GitHub - fabioberger/chrome: GopherJS Bindings for Chrome <https://github.com/fabioberger/chrome>`_
 
+.. [5] | `GitHub - siongui/godom: Make DOM manipultation in Go as similar to JavaScript as possible. (via GopherJS) <https://github.com/siongui/godom>`_
+       | `GitHub - siongui/gojianfan: Traditional and Simplified Chinese Conversion in Go <https://github.com/siongui/gojianfan>`_
+       | `[GopherJS] Traverse DOM Tree <https://siongui.github.io/2016/06/14/gopherjs-traverse-dom-tree/>`_
+       | `javascript - TEXT_NODE: returns ONLY text? - Stack Overflow <http://stackoverflow.com/questions/6087399/text-node-returns-only-text>`_
+
 .. _Go: https://golang.org/
 .. _JavaScript: https://www.google.com/search?q=JavaScript
 .. _GopherJS: http://www.gopherjs.org/
